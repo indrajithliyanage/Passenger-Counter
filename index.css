@@ -1,0 +1,91 @@
+:root {
+    --borderRadius: 30px;
+    --containerWidth: 50vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-header {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.7)), url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: var(--containerWidth);
+    height: 50vh;
+    border-top-left-radius: var(--borderRadius);
+    border-top-right-radius: var(--borderRadius);
+}
+
+.grid-header h1 {
+    text-align: center;
+    background-color: rgb(190, 190, 190);
+    color: black;
+    opacity: 1;
+    border-top-left-radius: var(--borderRadius);
+    border-top-right-radius: var(--borderRadius);
+}
+
+.grid-content {
+    width: var(--containerWidth);
+    height: auto;
+    text-align: center;
+    background-color: gray;
+    border-bottom-left-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+}
+
+.grid-content h2 {
+    font-size: 50px;
+    background-color: lightseagreen;
+    margin: auto 35%;
+    border-radius: var(--borderRadius);
+    color: white;
+}
+
+.button-area {
+    margin: 10px auto;
+}
+
+.button-area button {
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prev-Entries{
+    margin: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+#entries{
+    display: block;
+    color: white;
+}
+
+#increment-btn {
+    background-color: rgb(200, 67, 67);
+
+}
+
+#save-btn {
+    background-color: rgb(44, 204, 44);  
+    display: none;  
+}
